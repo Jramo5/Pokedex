@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="https://kit.fontawesome.com/8407d0f78d.js" crossorigin="anonymous"></script>
+    <title>PokenDex</title>
+</head>
+
+<body>
+    <main>
+        <div class="main">
+            <h1>POKEDEX</h1>
+            <p>by: Jramo5</p>
+            <audio src="assets/music/pkm.mp3" autoplay></audio>
+            <div class="pokedex">
+                <div class="izquierdo">
+                    <div class="izquierdo-arriba">
+                        <div class="parte-izquierda">
+                            <div class="circulo-1"></div>
+                        </div>
+                        <div class="parte-derecha">
+                            <div class="circulo-2"></div>
+                            <div class="circulo-3"></div>
+                            <div class="circulo-4"></div>
+                        </div>
+                    </div>
+    
+                    <div class="contenedor-pantalla">
+                        <div class="pantalla">
+                            <div class="botones-arriba">
+                                <div class="boton-izquierdo"></div>
+                                <div class="boton-derecho"></div>
+                            </div>
+                            <div class="image">
+                                <img src="assets/img/pokeball.png" alt="" id="pokemon-image">
+                            </div>
+                            <div class="botones-abajo">
+                                <div class="boton-izquierdo"></div>
+                                <div class="boton-derecho"><img src="assets/svg/as3.svg" alt="imagen hamburgesa"
+                                        class="svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="izquierda-abajo">
+                            <div class="name">
+                                <input type="text" name="pokemon" id="pokemon-name" required>
+                                <label id="poken-search">Pokemon???</label>
+                            </div>
+                            <div class="botones">
+                                <div class="doble-boton">
+                                    <div class="doble-boton-1 poke-btn-style">
+                                        <button class="btn-pokemon" onclick="pokemon()">Buscar</button>
+                                    </div>
+                                </div>
+                                <div class="boton-cruz">
+                                    <img src="assets/svg/cruz.svg" alt="cruz" class="cruz">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="derecho">
+                    <div class="description">
+                        <p>Pokemon: <span id="poke-resultado" class="inf-dato">??????</span></p>
+                        <p>Tipo: <span id="poke-type" class="inf-dato">???</span></p>
+                        <p>Habilidad: <span id="pokemon-habilidad" class="inf-dato">????</span></p>
+                        <p>Exp: <span id="pokemon-experiencia" class="inf-dato">????</span></p>
+                    </div>
+                    <div class="cuadricula-botones">
+                        <div class="primera-fila">
+                            <div>0</div>
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                        </div>
+                        <div class="segunda-fila">
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                        </div>
+                    </div>
+                    <div class="datos-pokemon">
+                        <div class="altura"><p>Height: <span class="inf-dato" id="poke-altura">???</span></p></div>
+                        <div class="Weight"><p>Weight  <span class="inf-dato" id="Weight">???</span></p></div>
+                    </div>
+                    <div class="github">
+                        <div class="img">
+                            <a href="https://github.com/jramo5"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/pokemon-api.js"></script>
+</html>
